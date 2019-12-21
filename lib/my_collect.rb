@@ -3,9 +3,9 @@ def my_collect(array)
   name_collection = []
   while i < array.length
     name_collection.push yield(array[i])
-        i += 1
+    i += 1
   end
   name_collection
 end
 
-my_collect(array) {|i| i.split(" ").first}
+my_collect(list) {|i| i.split(" ").first}
